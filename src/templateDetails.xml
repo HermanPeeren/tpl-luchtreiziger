@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="template" client="site" method="upgrade">
+    <name>luchtreiziger2026</name>
+    <version>1.0.0</version>
+    <creationDate>2026-11</creationDate>
+    <author>Herman Peeren</author>
+    <copyright>(C) 2014 Joostrap, (C) 2014-2026 Herman Peeren</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>TPL_LUCHTREIZIGER2026_XML_DESCRIPTION</description>
+    <inheritable>0</inheritable>
+    <parent>cassiopeia</parent>
+    <files>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>html</folder>
+        <folder>language</folder>
+    </files>
+    <media destination="templates/site/luchtreiziger2026" folder="media">
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+    </media>
+    <positions>
+        <!-- Same names as luchtreiziger2014, so module assignments survive the migration -->
+        <position>mob-menu-above</position>
+        <position>menu</position>
+        <position>mob-menu-below</position>
+        <position>carousel</position>
+        <position>strapline</position>
+        <position>top</position>
+        <position>middle</position>
+        <position>top-article</position>
+        <position>left</position>
+        <position>left_menu</position>
+        <position>right</position>
+        <position>bottom1</position>
+        <position>bottom2</position>
+        <position>footer1</position>
+        <position>ondermenu1</position>
+        <position>ondermenu2</position>
+        <position>ondermenu3</position>
+        <position>ondermenu4</position>
+        <position>footer2</position>
+        <position>debug</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/tpl_luchtreiziger2026.ini</language>
+        <language tag="en-GB">en-GB/tpl_luchtreiziger2026.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field
+                    name="logoFile"
+                    type="media"
+                    default="images/Mascotte100.png"
+                    label="TPL_LUCHTREIZIGER2026_LOGO_LABEL"
+                />
+                <field
+                    name="sitetitle"
+                    type="text"
+                    default=""
+                    label="TPL_LUCHTREIZIGER2026_SITETITLE_LABEL"
+                    description="TPL_LUCHTREIZIGER2026_SITETITLE_DESC"
+                    filter="string"
+                />
+                <field
+                    name="sitedescription"
+                    type="text"
+                    default=""
+                    label="TPL_LUCHTREIZIGER2026_SITEDESCRIPTION_LABEL"
+                    filter="string"
+                />
+                <field
+                    name="ogImage"
+                    type="media"
+                    default="images/Mascotte_Warme_Douche_Groot.gif"
+                    label="TPL_LUCHTREIZIGER2026_OGIMAGE_LABEL"
+                    description="TPL_LUCHTREIZIGER2026_OGIMAGE_DESC"
+                />
+                <field
+                    name="sidebarLeftWidth"
+                    type="list"
+                    default="4"
+                    label="TPL_LUCHTREIZIGER2026_SIDEBAR_LEFT_WIDTH_LABEL"
+                    validate="options"
+                    >
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </field>
+                <field
+                    name="sidebarRightWidth"
+                    type="list"
+                    default="3"
+                    label="TPL_LUCHTREIZIGER2026_SIDEBAR_RIGHT_WIDTH_LABEL"
+                    validate="options"
+                    >
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </field>
+                <field
+                    name="frontpageshow"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    default="1"
+                    label="TPL_LUCHTREIZIGER2026_FRONTPAGESHOW_LABEL"
+                    filter="integer"
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="bodyclass"
+                    type="text"
+                    default=""
+                    label="TPL_LUCHTREIZIGER2026_BODYCLASS_LABEL"
+                    filter="string"
+                />
+                <field
+                    name="menuslide"
+                    type="list"
+                    default="right"
+                    label="TPL_LUCHTREIZIGER2026_MENUSLIDE_LABEL"
+                    validate="options"
+                    >
+                    <option value="left">TPL_LUCHTREIZIGER2026_LEFT</option>
+                    <option value="right">TPL_LUCHTREIZIGER2026_RIGHT</option>
+                    <option value="top">TPL_LUCHTREIZIGER2026_TOP</option>
+                    <option value="bottom">TPL_LUCHTREIZIGER2026_BOTTOM</option>
+                </field>
+                <field
+                    name="toTop"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    default="0"
+                    label="TPL_LUCHTREIZIGER2026_TOTOP_LABEL"
+                    filter="integer"
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="copyrightsText"
+                    type="textarea"
+                    default=""
+                    label="TPL_LUCHTREIZIGER2026_COPYRIGHTS_TEXT_LABEL"
+                    rows="4"
+                    filter="safehtml"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

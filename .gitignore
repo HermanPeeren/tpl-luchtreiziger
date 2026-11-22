@@ -1,0 +1,12 @@
+# Build output
+/dist/
+
+# Gosmick Sans webfont: "Copyright (c) Graham Meade, 2003. All rights reserved."
+# Not redistributable in a public repository. Copy the files from
+# templates/luchtreiziger2014/fonts/ of the old site before building (see README).
+/src/media/fonts/gosmicksans*
+
+# Local test site and IDE files
+/joomla/
+/.idea/
+/.vscode/

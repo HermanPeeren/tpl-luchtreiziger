@@ -1,0 +1,549 @@
+
+/* HP aangepast template Luchtreiziger*/
+
+@font-face {
+    font-family: 'gosmicksansbold';
+    src: url('../fonts/gosmicksansbold-webfont.eot');
+    src: url('../fonts/gosmicksansbold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gosmicksansbold-webfont.woff') format('woff'),
+    url('../fonts/gosmicksansbold-webfont.ttf') format('truetype'),
+    url('../fonts/gosmicksansbold-webfont.svg#gosmicksansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #3792c1; /*blauw (van lucht)*/
+    color: #555;
+}
+
+.row {
+    margin-left: 0;
+    margin-top: 1em;
+}
+
+/* top menu */
+.navbar-header {
+    background: none repeat scroll 0 0 rgba(104, 30, 93, 0.6); /* paars, transparant */
+}
+.navbar-nav > li > a {
+    font-family: 'gosmicksansbold';
+    font-weight: normal;
+}
+.navbar-header .navbar-nav > li > a {
+    padding: 19px 14px;
+}
+.navbar-header .container {
+    padding-left: 0;
+}
+.nav li a {
+     color: #fff;
+ }
+.nav li.current a, .nav li a:hover{
+    color: #ffd520; /* geel */
+}
+.navbar .dropdown-menu {
+    background: none repeat scroll 0 0 rgba(104, 30, 93, 0.9); /* paars, transparant */
+}
+.nav li.current ul li a, .nav li ul.dropdown-menu li a {
+    color: #fff;
+}
+
+.nav li.current ul li.active a, .nav li ul.dropdown-menu li a:hover {
+    color: #ffd520; /* geel */
+}
+.navbar .dropdown-menu li a {
+    font-size: 16px; /* was 13px  */
+    line-height: 1.1; /* was 1 */
+}
+
+
+/* ballon linksboven */
+.navbar-brand img {
+    height: 100px;
+    margin-top: -30px;
+    margin-left: 0;
+    /*  animation-duration: 10s;
+      animation-name: ballonbeweeg;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      transition: left 0.1s ease-out 0s, top 0.5s ease-out 0s; */
+}
+/*
+@keyframes ballonbeweeg {
+    from
+    {
+        margin-top: -20px;
+        margin-left: 5px;
+    }
+    to
+    {
+        margin-top: -10px;
+        margin-left: 7px;
+    }
+} */
+
+
+/* home, sweet home - gaat helemaal mis in chrome zo: hele brede bovenbalk zonder menu */
+/*
+.navbar-nav > li:nth-child(1) a:after {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "\f015";
+    */
+    /*text-align: center;*/
+/*    color: #fff;
+    font-weight: normal;
+    text-indent:903em; *//* nakijken, verbeteren */
+/*}
+.navbar-nav > li:nth-child(1) a  {
+    text-indent:-906em;
+}
+.navbar-nav > li.current a:after {
+    color: #3792c1; */ /*blauw */
+/*}
+.navbar-nav > li a:hover:after {
+    color: #3792c1; */  /*blauw */
+/*}*/
+
+
+
+/* content */
+.container.inner {
+    background-color: #fff;
+    padding: 0 2em;
+}
+
+a {
+    color: #ff7200;  /*oranje */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ff7200;  /*oranje */
+}
+
+a:hover {
+    color: #be3c00;  /* oranje, 20% donkerder */
+    text-decoration: underline;
+}
+
+/*footer-ondermenu */
+.light-wrapper, .light-wrapper .container.inner  {
+    background-color: #3792c1; /*blauw */
+    margin-top: 0;
+    padding: 0;
+    border-bottom:0; /* anders 1px lijn */
+}
+.light-wrapper .container.inner.ondermenu  {
+    padding-top: 1.5em;
+}
+.light-wrapper .container.inner ul {
+     width: 100%;
+    padding: 0;
+    padding-bottom: 1em;
+}
+.light-wrapper .container.inner li {
+    width: 100%;
+}
+
+.light-wrapper .container.inner a {
+    color: white;
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 17px;
+    display:block;
+    width: 100%;
+    padding: 2px;
+    padding-left: 0;
+}
+.light-wrapper .container.inner a:hover {
+    color: #ffd520; /* geel */
+}
+.container.inner.ondermenu {
+    padding: 0 24px;
+}
+
+.ondermenu .col-xs-6, .ondermenu .col-md-3 {
+    padding-left: 0;
+}
+.ondermenu .col-xs-6 {
+    min-width: 200px;
+}
+.ondermenu .nav-header{
+    font-family: 'gosmicksansbold';
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.onderStartplaatsenZH {
+    margin-top: -17px;
+}
+
+/*footer2: contactgegevens */
+.footer.black-wrapper  {
+    background: none repeat scroll 0 0 rgba(104, 30, 93, 0.6); /* paars, transparant */
+    margin-top: 0;
+    padding: 1.5em 0.5em;
+}
+.footer.black-wrapper .container.inner,
+.footer.black-wrapper .inner  {
+    /*background-color: #681e5d;   paars */
+    background: none;
+    color: #fff;
+    padding: 0;
+}
+.footer.black-wrapper .container.inner a {
+    color: #fff;
+}
+
+.footer.black-wrapper .container.inner a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* headings */
+h1,h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link,
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited,
+fieldset.formFieldset legend
+{
+    font-family: 'gosmicksansbold';
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff; /* wit */
+    display: inline-block;
+    /*padding-left: .7em;
+    padding-right: .7em;*/
+}
+/* vervangen 30-12-2019
+
+h1 {
+    background: #ff7200 url("../images/kopje_man_oranje26.gif") no-repeat right; !* oranje *!
+    font-size: 22px;
+    line-height: 26px;
+    padding-right: 1em;
+}
+h2 {
+    background: #36d150 url("../images/kopje_man_groen24.gif") no-repeat right; !* groen *!
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 1em;
+}
+h4 {
+    background-color: #681e5d;  !* paars *!
+    font-size: 16px;
+    line-height: 20px;
+}
+*/
+/* nu niet in gebruik: #df3027; rood*/
+
+h1, .page-header {
+    color: #3792c1;  /*blauw */
+    font-size: 28px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 6px;
+    border-bottom: none;
+}
+h2, fieldset.formFieldset legend {
+    color: #008588; /* donker groen, turquoise */
+    font-size: 24px;
+    line-height: 26px;
+    padding-left: 0;
+    margin-top: 1em;
+}
+h4 {
+    color: #681e5d;  /* paars */
+    font-size: 20px;
+    line-height: 22px;
+    padding-left: 0;
+}
+
+/* h3 like a button: read more... */
+h3 {
+    background-color: #ff7200;  /* oranje */
+    color: #fff;
+    font-weight:normal;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 0.3em 0.9em;
+    margin-left: 30%;
+}
+
+h3:hover {
+    background-color: #be3c00;  /*20% donkerder oranje */
+}
+
+h3 a:hover {
+    text-decoration:none;
+}
+
+
+/* buttons */
+button, input[type="submit"] {
+    font-family: 'gosmicksansbold';
+    background-color: #ff7200;  /* oranje */
+    color: #fff;
+    font-weight:normal;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 0.3em 0.9em;
+    text-decoration:none;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #be3c00;  /*20% donkerder oranje */
+    text-decoration:none;
+}
+
+/* But not with an h3 on a form */
+.formContainer h3{
+    background-color: #fff;
+    color: #36d150; /* lichtgroen */
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 2em;
+    padding: 0.3em 0;
+}
+
+
+/* right-sidebar */
+/* vervangen 30-12-2019
+.right-sidebar h4 {
+    background: #681e5d url("../images/kopje_vrouw_paars20.gif") no-repeat left; !* paars *!
+    padding-left: 1.5em;
+}*/
+.right-sidebar h4 {
+    color: #681e5d; /* paars */
+    padding-left: 0;
+    line-height: 1.5em;
+    width: 100%;
+    border-top: 1px solid #681e5d; /* paars */
+}
+.right-sidebar p, .right-sidebar td {
+    font-size: .9em;
+}
+
+.module.twitter {
+    margin-bottom: 1em;
+}
+
+/* header, banner */
+.container.inner .custom.headermodule {
+    background-color: white;
+    text-align: center;
+}
+.container.inner .custom.headermodule .headercontainer {
+    position: relative;
+}
+.container.inner .custom.headermodule .headertop{
+    color: #681e5d;  /* paars */
+    /* color:#e03127; /* rood */
+    font-family: 'gosmicksansbold';
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 0.3em;
+    background: none repeat scroll 0 0 rgba(255,255, 255, 0.4); /* wit, transparant */
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    margin-bottom: 0;
+    display:block;
+}
+
+/* ==== Lees meer... === */
+.btn, .btn-submit {
+    background-color: white;
+    color: #3792c1 !important;  /*blauw */
+    font-weight: bold;
+}
+
+.btn:hover, .btn-submit:hover {
+    background-color: white;
+    color: #36d150 !important;  /* groen */
+}
+
+/* === tables lastminutes and vaartenvrijeplaatsen === */
+div.vaarttabel.outer {
+    width: 100%;
+    max-width: 650px;
+    min-width: 320px;
+    border: 1px solid #ffd520; /* geel */
+    border-radius:5px;
+    padding-bottom: .7em;
+}
+
+table.vaarttabel.inner {
+    width: 100%;
+    max-width: 100%;
+    font-size: .9em;
+    table-layout:fixed;
+}
+table.vaarttabel thead {
+    border: none;
+    border-bottom: 1px solid #ffd520; /* geel */
+}
+
+table.vaarttabel th {
+    text-align: center;
+   padding: .7em;
+}
+table.vaarttabel th.leftalign {
+    text-align: left;
+}
+table.vaarttabel.inner td {
+    padding-left: .7em;
+    padding-right: .7em;
+}
+
+div.vaarttabel.outer.rightcolumn {
+    max-width: 213px;
+    padding: 0.3em;
+    min-width: 0;
+}
+
+div.vaarttabel.outer.rightcolumn table.vaarttabel.inner td {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+table.vaarttabel.lrlastminutes td {
+    font-family: Arial, Helvetica, Sans Serif;
+    white-space: nowrap;
+    font-size: 0.8em;
+}
+
+table.vertrekplaatsenrechts {
+    width:100%;
+    max-width: 213px;
+    margin-top: 6px;
+    font-size:0.8em;
+    white-space: nowrap;
+}
+
+table.vertrekplaatsenrechts td {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* MeerKnop */
+.MeerKnop {
+    text-align: right;
+    margin-bottom: 2em;
+}
+
+.MeerKnop a {
+    background-color: #3792c1;  /*blauw */
+    border-radius:5px;
+    padding: .3em .9em;
+    color: white;
+    font-weight: bold;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.MeerKnop a:hover {
+    color: #ffd520; /* geel */
+}
+
+/* RSform */
+input[type="radio"], input[type="checkbox"] {
+    /* display: inline-block;*/
+    width: auto;
+    margin: .5em;
+}
+
+label {
+    font-weight: normal;
+}
+/* deze styling met pieletjes gestopt 30-12-2019
+
+fieldset.formFieldset legend {
+    !* stylen als een h2 *!
+    font-family: 'gosmicksansbold';
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #fff !important; !* wit *!
+    display: inline-block !important;
+    padding-left: .7em;
+    background: #36d150 url("../images/kopje_man_groen24.gif") no-repeat right; !* groen *!
+    font-size: 20px !important;
+    line-height: 24px;
+    padding-right: 1em;
+    border-width: 0;
+    width: auto;
+    margin-bottom: 10px;
+}
+*/
+
+ul.breadcrumb {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0 8px;
+}
+
+/* ========== responsive =================== */
+
+/* Mascotte iets lager op mobile menu */
+
+@media (max-width: 767px) {
+    .navbar-brand img {
+        margin-top: -20px;
+    }
+}
+
+/*
+@media (max-width: 991px) {
+}
+*/
+/*color: #a7b1b7;  grijs */
+/*color: #e03127;  rood */
+/* #0a9ad0;   blue from balloon */
+
+
+/* social media */
+.db8socialmediashare.socialmedia {
+    font-size:32px;
+}
+.db8socialmediashare.socialmedia a:hover{
+    text-decoration: none;
+}
+.fa.fa-pinterest-square {
+    display:none;
+}
+
+/* Citaat */
+blockquote {
+    background-color: #3792c1;  /*blauw */;
+}
+
+/*ochtendvaarten*/
+.ochtend {
+    color: green;
+}
+
+/*hidden captcha*/
+tr.extrafield, .extrafield td, .extrafield label, .extrafield input {
+    display: none !important;
+    visibility: hidden;
+    height: 0;
+}
+
+/* ruimte onder reactieformulier */
+.tekstenOnderVaart {
+    margin-bottom: 1em;
+}
