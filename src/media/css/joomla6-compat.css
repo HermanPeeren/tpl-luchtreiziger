@@ -107,3 +107,12 @@ figure.item-image img {
         opacity: 1;
     }
 }
+
+/* Video iframes in articles without a width: full width at 16:9, as the JCE plugin
+   "responsive widgets" made them on Joomla 3. Iframes with a width, such as the former
+   AllVideos ones (400 x 300), keep it, as on Joomla 3. */
+.com-content-article__body iframe:is(:not([width]), [width=""]) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
