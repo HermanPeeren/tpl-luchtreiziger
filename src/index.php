@@ -106,8 +106,11 @@ $wa->useScript('jquery-noconflict')
 
 $this->addScriptOptions('tpl_luchtreiziger', ['menuslide' => $menuslide]);
 
-// mmenu CSS and custom.css come after the extension styles, as in luchtreiziger2014
+// mmenu CSS and custom.css come after the extension styles, as in luchtreiziger2014. Before them
+// the CSS of the RSForm legacy layouts (inline, 2lines), which the plugin RSForm Pro Legacy
+// Layouts loaded on Joomla 3; that plugin does not install on Joomla 6.
 $mmenuCss  = HTMLHelper::_('stylesheet', 'jquery.mmenu.all.css', ['relative' => true, 'pathOnly' => true, 'version' => 'auto']);
+$rsformCss = HTMLHelper::_('stylesheet', 'rsform-legacy.css', ['relative' => true, 'pathOnly' => true, 'version' => 'auto']);
 $customCss = HTMLHelper::_('stylesheet', 'custom.css', ['relative' => true, 'pathOnly' => true, 'version' => 'auto']);
 ?>
 <!DOCTYPE html>
@@ -116,6 +119,7 @@ $customCss = HTMLHelper::_('stylesheet', 'custom.css', ['relative' => true, 'pat
     <jdoc:include type="metas" />
     <jdoc:include type="styles" />
     <jdoc:include type="scripts" />
+    <link rel="stylesheet" href="<?php echo $rsformCss; ?>">
     <link rel="stylesheet" href="<?php echo $mmenuCss; ?>">
     <link rel="stylesheet" href="<?php echo $customCss; ?>" media="screen">
 </head>
