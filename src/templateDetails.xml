@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="template" client="site" method="upgrade">
     <name>luchtreiziger2026</name>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <creationDate>2026-11</creationDate>
     <author>Herman Peeren</author>
     <copyright>(C) 2014 Joostrap, (C) 2014-2026 Herman Peeren</copyright>
