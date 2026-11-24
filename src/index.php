@@ -180,7 +180,11 @@ $customCss = HTMLHelper::_('stylesheet', 'custom.css', ['relative' => true, 'pat
                 <div class="col-md-<?php echo $span; ?>">
                     <jdoc:include type="modules" name="top-article" style="xhtml" />
                     <jdoc:include type="message" />
-                    <jdoc:include type="component" />
+                    <?php if ($this instanceof \Joomla\CMS\Document\ErrorDocument) : ?>
+                        <?php require __DIR__ . '/error-content.php'; ?>
+                    <?php else : ?>
+                        <jdoc:include type="component" />
+                    <?php endif; ?>
                 </div>
             <?php endif; ?>
             <?php if ($hasRight) : ?>
